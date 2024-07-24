@@ -1,0 +1,10 @@
+[package]
+name = "dep_feature_with_implicit_feature"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+a = ["dep_name/feature_name"]
+
+[dependencies]
+dep_name = { path = "../../fixtures/dep_name", optional = true }
