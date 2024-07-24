@@ -3,6 +3,14 @@
 version = 3
 
 [[package]]
+name = "dep_feature_with_explicit_feature"
+version = "0.1.0"
+dependencies = [
+ "dep_name",
+ "unrelated",
+]
+
+[[package]]
 name = "dep_feature_with_implicit_feature"
 version = "0.1.0"
 dependencies = [
@@ -11,4 +19,8 @@ dependencies = [
 
 [[package]]
 name = "dep_name"
+version = "0.1.0"
+
+[[package]]
+name = "unrelated"
 version = "0.1.0"
