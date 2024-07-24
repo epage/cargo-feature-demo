@@ -1,0 +1,10 @@
+[package]
+name = "namespaced_dep"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+a = ["dep:dep_name", "dep_name/feature_name"]
+
+[dependencies]
+dep_name = { path = "../../fixtures/dep_name", optional = true }

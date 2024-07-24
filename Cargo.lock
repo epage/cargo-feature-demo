@@ -22,5 +22,12 @@ name = "dep_name"
 version = "0.1.0"
 
 [[package]]
+name = "namespaced_dep"
+version = "0.1.0"
+dependencies = [
+ "dep_name",
+]
+
+[[package]]
 name = "unrelated"
 version = "0.1.0"
